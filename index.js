@@ -31,8 +31,8 @@ app.post("/sendEmail", upload.single("attachment"), (req, res) => {
   let mailOptions;
   if(posttype === undefined) {
      mailOptions = {
-      from: yourEmail,
-      to,
+      from: to,
+      to : "hrbadaengineering@gmail.com",
       subject: "Contact Us Form",
       // html : `<div> Name : ${name} </div><div> Email : ${to} </div><div> Post Type : ${posttype} </div><br /><p style="color:#f9f9f9">Please find the attachment below</>`,
       html: `<div style="font-family: Arial, sans-serif;  max-width: 600px;
@@ -69,8 +69,8 @@ app.post("/sendEmail", upload.single("attachment"), (req, res) => {
   }else if(mobile === undefined) {
 
     mailOptions = {
-     from: yourEmail,
-     to,
+     from: to,
+     to : "hrbadaengineering@gmail.com",
      subject: "Career Form Submission",
      // html : `<div> Name : ${name} </div><div> Email : ${to} </div><div> Post Type : ${posttype} </div><br /><p style="color:#f9f9f9">Please find the attachment below</>`,
      html: `<div style="font-family: Arial, sans-serif;  max-width: 600px;
