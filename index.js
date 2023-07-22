@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 // Replace these variables with your actual email account settings
-const yourEmail = "thakurhospital0657@gmail.com";
-const yourPassword = "yqhixurjojncmyqb";
+const yourEmail = "hrbadaengineering@gmail.com";
+const yourPassword = "lyvpitnzkkiszqmn";
 
 const transporter = nodemailer.createTransport({
   service: "Gmail", // e.g., 'gmail'
